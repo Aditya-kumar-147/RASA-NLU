@@ -1,0 +1,20 @@
+1. Bot Response.
+
+command - rasa shell
+
+user query
+  - gets mapped to one of the intent.
+  - then it opens stories.yml and from the intent
+    predicted, it will take an utter action.
+  - then it opens domain.yml, and returns the reply to cmd. based on the action utter.
+
+
+2. create stories (train your bot communication which is action and utterances)
+
+command - rasa interactive.
+
+and your chat will be saved to stories.yml for futre reference.
+
+3. If you want to test, intent prediction of a user query.
+
+command - rasa shell nlu.
